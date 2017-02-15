@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+    <title>КУА "L.D ЕССЕТ МЕНЕДЖМЕНТ" </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="../vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="form.html" class="site_title"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <span>PDF Генератор</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Привіт,</span>
+                <h2>Sky City</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Головна</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i>Інформація про клієнта</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">SKYCITY
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;">Допомога</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Вихід</a></li>
+                  </ul>
+                </li>
+
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>КУА "Ел.Ді Ессет Менеджмент"</h3>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Генерація документів<small>Виберіть тип угоди</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                      <div class="form-group col-md-6 col-sm-12 col-xs-12 personType">
+                        <label class="col-md-6 col-sm-6 col-xs-12 control-label">Тип особи
+                          <br>
+                          <small class="text-navy">виберіть один з варіантів</small>
+                        </label>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" class="flat" checked name="iCheck"> Фізична особа або ФОП
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" class="flat" name="iCheck"> Юридична особа
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                        <label class="col-md-6 col-sm-6 col-xs-12 control-label">Спосіб оплати
+                          <br>
+                          <small class="text-navy">виберіть один з варіантів</small>
+                        </label>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" class="flat" checked name="iCheck1"> Розстрочка
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" class="flat" name="iCheck1"> Разова оплата
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4">
+						  <button class="btn btn-primary" type="reset">Оновити</button>
+                          <button type="submit" class="btn btn-success">Прийняти</button>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Інформація про клієнта <small>Фізична особа + ФОП</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form class="form-horizontal form-label-left input_mask">
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="Ім'я" required="required">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control" id="inputSuccess3" placeholder="Прізвище" required="required">
+                        <span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="По батькові" required="required">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control" id="inputSuccess3" placeholder="Громадянство" required="required">
+                        <span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
+                      </div>
+                      
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="email" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email" required="required">
+                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="tel" class="form-control" id="inputSuccess5" placeholder="Телефон">
+                        <span class="fa fa-phone form-control-feedback right" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Стать</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div id="gender" class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="male"> &nbsp; Чоловік &nbsp;
+                            </label>
+                            <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="female"> &nbsp; Жінка &nbsp;
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Фактичне місце проживання<span class="required">*</span></label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="Фактичне місце проживання" required="required">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Ідентифікаційний код<span class="required">*</span></label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="number" class="form-control" required="required" placeholder="ID">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Дата народження <span class="required">*</span>
+                        </label>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1" max="31" placeholder="чч">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1" max="12" placeholder="мм">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1900" max="2016" placeholder="рррр">
+                        </div>
+                      </div>
+
+                      <div class="x_title">
+                          <h2>Паспортні данні <small><span class="required">*</span>всі поля обов'язкові до заповнення</small></h2>
+                      <div class="clearfix"></div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">№ Паспорту <span class="required">*</span>
+                        </label>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Серія">
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Номер">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Місце видачі <span class="required">*</span>
+                        </label>
+                        <div class="col-md-5 col-sm-6 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="_________ МВ УДМС Украни">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">в 
+                        </label>
+                        <div class="col-md-5 col-sm-6 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="________ області">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Дата видачі <span class="required">*</span>
+                        </label>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1" max="31" placeholder="чч">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1" max="12" placeholder="мм">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1900" max="2016" placeholder="рррр">
+                        </div>
+                      </div>
+
+                      <div class="x_title">
+                          <h2>Місце проживання <small>(реєстрації або перебування)</small></h2>
+                      <div class="clearfix"></div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Місто <span class="required">*</span>
+                        </label>
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Місто">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="0" max="99999" placeholder="Індекс">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Адреса <span class="required">*</span>
+                        </label>
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="вулиця">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="буд.">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="кв.">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+						              <button class="btn btn-primary" type="reset">Оновити</button>
+                          <button type="submit" class="btn btn-success">Приняти</button>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Інформація про клієнта <small>Юридична особа</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form class="form-horizontal form-label-left input_mask">
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="Ім'я" required="required">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control" id="inputSuccess3" placeholder="Прізвище" required="required">
+                        <span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="По батькові" required="required">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="text" class="form-control" id="inputSuccess3" placeholder="Громадянство" required="required">
+                        <span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
+                      </div>
+                      
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="email" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email" required="required">
+                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                        <input type="tel" class="form-control" id="inputSuccess5" placeholder="Телефон">
+                        <span class="fa fa-phone form-control-feedback right" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Стать</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div id="gender" class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="male"> &nbsp; Чоловік &nbsp;
+                            </label>
+                            <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="female"> &nbsp; Жінка &nbsp;
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Фактичне місце проживання<span class="required">*</span></label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="Фактичне місце проживання" required="required">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Ідентифікаційний код<span class="required">*</span></label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="number" class="form-control" required="required" placeholder="ID">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Дата народження <span class="required">*</span>
+                        </label>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1" max="31" placeholder="чч">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1" max="12" placeholder="мм">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1900" max="2016" placeholder="рррр">
+                        </div>
+                      </div>
+
+                      <div class="x_title">
+                          <h2>Паспортні данні <small><span class="required">*</span>всі поля обов'язкові до заповнення</small></h2>
+                      <div class="clearfix"></div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">№ Паспорту <span class="required">*</span>
+                        </label>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Серія">
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Номер">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Місце видачі <span class="required">*</span>
+                        </label>
+                        <div class="col-md-5 col-sm-6 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="_________ МВ УДМС Украни">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">в 
+                        </label>
+                        <div class="col-md-5 col-sm-6 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="________ області">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Дата видачі <span class="required">*</span>
+                        </label>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1" max="31" placeholder="чч">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1" max="12" placeholder="мм">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="1900" max="2016" placeholder="рррр">
+                        </div>
+                      </div>
+
+                      <div class="x_title">
+                          <h2>Місце проживання <small>(реєстрації або перебування)</small></h2>
+                      <div class="clearfix"></div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Місто <span class="required">*</span>
+                        </label>
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Місто">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="number" min="0" max="99999" placeholder="Індекс">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Адреса <span class="required">*</span>
+                        </label>
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="вулиця">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="буд.">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="кв.">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                          <button class="btn btn-primary" type="reset">Оновити</button>
+                          <button type="submit" class="btn btn-success">Приняти</button>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Інформація про приміщення <small>всі поля обов'язкові до заповнення</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form class="form-horizontal form-label-left">
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Тип приміщення</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <select class="form-control">
+                            <option>Р - Квартира</option>
+                            <option>А - Комірка</option>
+                            <option>С - Комерція</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Приміщення <span class="required">*</span>
+                        </label>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Номер">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Секція">
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Поверх">
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" placeholder="Кількість кімнат">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Загальна площа(проектна)</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="м^2">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Вартість 1м^2</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="Ціна в гривнях">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Загальна вартість об'єкта інвестування</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="Ціна в гривнях">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Ціна форвардного контракту</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="Ціна в гривнях (числом)">
+                        </div>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12"></label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="Ціна в гривнях (словами)">
+                        </div>
+                      </div>
+
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                          <button type="reset" class="btn btn-primary">Оновити</button>
+                          <button type="submit" class="btn btn-success">Прийняти</button>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Разработка приложения: <a href="https://bubblegum.house">BubbleGum</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="../vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="../vendors/starrr/dist/starrr.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.js"></script>
+	
+  </body>
+</html>
